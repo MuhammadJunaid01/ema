@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Col, Container } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 
 const Product = (props) => {
   //   console.log(props);
@@ -12,12 +12,12 @@ const Product = (props) => {
           <Card.Title>
             <small>name:{name.slice(0, 60)}</small>
           </Card.Title>
-          <Card.Text>
+          <Card.Body>
             <h2> Price:{price}</h2>
             <p>Shipping Cost: {shipping}</p>
             <p>Stock: {stock}</p>
             <p>Ratting: {star}</p>
-          </Card.Text>
+          </Card.Body>
           <Button onClick={() => props.addToCart(props.pro)} variant="primary">
             Add To Cart
           </Button>
